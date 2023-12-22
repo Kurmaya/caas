@@ -13,6 +13,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.logo{
+width:100px;
+position: relative;
+/* left:5%; */
+top:-20px;
+
+
+}
 p {
 	margin-bottom: 0px;
 	font-size: 14px;
@@ -244,6 +252,7 @@ header {
 }
 header .navbar {
 	padding: 20px 0px;
+	/* background: rgba(150,150,150,.8); */
 }
 .background-header .navbar {
 	padding: 10px 0px;
@@ -288,6 +297,7 @@ header .navbar {
 }
 #navbarResponsive {
 	z-index: 999;
+	
 }
 .navbar-collapse {
 	text-align: center;
@@ -384,18 +394,29 @@ header .navbar {
 	background-position: center center;
 	background-repeat: no-repeat;
 	height:95vh;
+	position: relative;
+	
 }
+/* .img-fill::before{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.2);
+	z-index: 10;
+} */
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/slide_01.jpg);
+	background-image: url(../images/hero1-over.jpg);
+	position: relative;
 }
 
+
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/slide_02.jpg);
+	background-image: url(../images/hero2-over.jpg);
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/slide_03.jpg);
+	background-image: url(../images/hero-over.jpg);
 }
 
 .Modern-Slider .NextArrow{
@@ -649,6 +670,8 @@ article li{
 
 .more-info {
 	margin-top: 140px;
+	/* background: rgba(0,0,0,.8);
+	background: #a4c639; */
 }
 
 .more-info .left-image img {
@@ -1231,10 +1254,13 @@ footer .contact-form button.filled-button:hover {
 }
 
 
-
+.caas{
+	display: none;
+}
 
 /* Responsive Style */
 @media (max-width: 768px) {
+	
 	.sub-header {
 		display: none;
 	}

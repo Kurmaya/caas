@@ -28,8 +28,11 @@ jQuery( document ).ready(function( $ ) {
 
           if (scroll >= box - header) {
             $("header").addClass("background-header");
+            document.querySelector('.logo').src='./assets/images/gca logo-02.png';
           } else {
             $("header").removeClass("background-header");
+            document.querySelector('.logo').src='./assets/images/gca_logo-new.png';
+
           }
         });
 		if ($('.owl-testimonials').length) {
@@ -123,24 +126,24 @@ jQuery( document ).ready(function( $ ) {
 
         }
 
-        $(window).scroll(function(){
+    //     $(window).scroll(function(){
 
-          if(visible($('.count-digit')))
-            {
-              if($('.count-digit').hasClass('counter-loaded')) return;
-              $('.count-digit').addClass('counter-loaded');
+    //       if(visible($('.count-digit')))
+    //         {
+    //           if($('.count-digit').hasClass('counter-loaded')) return;
+    //           $('.count-digit').addClass('counter-loaded');
               
-        $('.count-digit').each(function () {
-          var $this = $(this);
-          jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-            duration: 3000,
-            easing: 'swing',
-            step: function () {
-              $this.text(Math.ceil(this.Counter));
-            }
-          });
-        });
-        }
-    })
+    //     $('.count-digit').each(function () {
+    //       var $this = $(this);
+    //       jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+    //         duration: 3000,
+    //         easing: 'swing',
+    //         step: function () {
+    //           $this.text(Math.ceil(this.Counter));
+    //         }
+    //       });
+    //     });
+    //     }
+    // })
  
 });
