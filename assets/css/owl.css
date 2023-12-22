@@ -41,7 +41,10 @@
     -ms-transform: translate3d(0, 0, 0); }
   .owl-carousel .owl-item {
     position: relative;
-    min-height: 1px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
     -webkit-backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;
